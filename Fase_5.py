@@ -1,3 +1,5 @@
+#ESTE PROGRAMA CALCULA LAS HORAS TRABAJADAS POR 4 PERSONAS DURANTE UNA SEMANA, CLASIFICANDO SI HICIERON SOBRETIEMPO O NO.
+
 #FUNCIÓN PARA PEDIR HORAS DE CADA DÍA
 def pedir_horas(dia):
     while True:
@@ -19,7 +21,8 @@ def calcular_horas_y_clasificacion(horas_dias):
     else:
         return total, "Horario estándar"
 
-#FUNCIÓN PARA PEDIR NOMBRE DEL TRABAJADOR
+#FUNCIÓN PARA PEDIR NOMBRE DEL TRABAJADOR USANDO METODOS Y VALIDACIONES DE CADENAS DE TEXTO
+#PARA QUE NO SEAN VACÍAS NI CONTENGAN NÚMEROS O CARACTERES ESPECIALES. SOLO LETRAS Y ESPACIOS PERMITIDOS
 def pedir_nombre():
     while True:
         nombre = input("Ingrese el nombre: ").strip()
@@ -32,7 +35,7 @@ def pedir_nombre():
             return nombre
 
 
-# CREAR MATRIZ CON DATOS INGRESADOS POR USUARIO
+# AQEÍ SE CREA LA MATRIZ CON DATOS INGRESADOS POR USUARIO
 horas_trabajadas = []
 
 for i in range(4):  # 4 recursos
